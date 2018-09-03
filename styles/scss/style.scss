@@ -1,3 +1,43 @@
-body {
-	background: black;
+.pageWrapper {
+	display: flex;
+	flex-direction: row;
+	width: 12000px;
+	height: 2000px;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+}
+
+.page {
+	display: flex;
+	flex-direction: column; 
+}
+
+.title  {
+	position: absolute;
+}
+
+.background {
+  background: lightblue;
+  width: 1000px;
+  height: 100%;
+  position: relative;
+  border: 1px solid black;
+  z-index: -100;
+}
+
+.blank {
+  background: lightblue;
+  width: 1000px;
+  height: 100%;
+  position: relative;
+  border: 1px solid black; 
+}
+
+.boat {
+  background-color: brown;
+  height: 100px;
+  width: 400px;
+  position: fixed;
+  bottom: 0; 
+  z-index: 100;
 }
