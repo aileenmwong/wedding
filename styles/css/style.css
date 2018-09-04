@@ -1,3 +1,18 @@
+/*
+Modules And Variables - declarations, functions, and variables
+These are things that don't output CSS
+*/
+/*
+Partials - these generate the bulk of the CSS, separated by categories
+*/
+.boat {
+  background-color: brown;
+  height: 100px;
+  width: 400px;
+  position: fixed;
+  bottom: 0;
+  z-index: 100; }
+
 .pageWrapper {
   display: flex;
   flex-direction: row;
@@ -28,12 +43,8 @@
   position: relative;
   border: 1px solid black; }
 
-.boat {
-  background-color: brown;
-  height: 100px;
-  width: 400px;
-  position: fixed;
-  bottom: 0;
-  z-index: 100; }
+/*
+Vendors - third part stylesheets
+*/
 
 /*# sourceMappingURL=style.css.map */
