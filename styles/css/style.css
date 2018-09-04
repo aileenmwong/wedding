@@ -5,6 +5,8 @@ These are things that don't output CSS
 /*
 Partials - these generate the bulk of the CSS, separated by categories
 */
+@import url("https://fonts.googleapis.com/css?family=Fascinate|Fira+Sans|PT+Sans+Narrow");
+@import url("https://fonts.googleapis.com/css?family=Fascinate|Fira+Sans|PT+Sans+Narrow");
 .boat {
   background-color: brown;
   height: 100px;
@@ -26,10 +28,11 @@ Partials - these generate the bulk of the CSS, separated by categories
   flex-direction: column; }
 
 .title {
-  position: absolute; }
+  position: absolute;
+  font-family: "Fascinate", cursive; }
 
 .background {
-  background: lightblue;
+  background-color: lightblue;
   width: 1000px;
   height: 100%;
   position: relative;
@@ -37,11 +40,28 @@ Partials - these generate the bulk of the CSS, separated by categories
   z-index: -100; }
 
 .blank {
-  background: lightblue;
-  width: 1000px;
+  background-color: lightblue;
   height: 100%;
   position: relative;
   border: 1px solid black; }
+
+.mainTextBox {
+  width: 500px;
+  height: 200px;
+  background-color: white;
+  position: absolute;
+  border-radius: 25px; }
+
+.dottedLineBox {
+  width: 400px;
+  height: 160px;
+  border: 5px dashed red;
+  border-radius: 25px;
+  margin: 0 auto; }
+
+.married {
+  padding: 10px;
+  text-align: center; }
 
 /*
 Vendors - third part stylesheets

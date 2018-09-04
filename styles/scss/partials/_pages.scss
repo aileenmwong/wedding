@@ -1,3 +1,6 @@
+@import 'typography';
+@import '../modules/colors';
+
 .pageWrapper {
 	display: flex;
 	flex-direction: row;
@@ -14,10 +17,11 @@
 
 .title  {
 	position: absolute;
+  font-family: $titleFont;
 }
 
 .background {
-  background: $background-color;
+  background-color: $lightBlue;
   width: 1000px;
   height: 100%;
   position: relative;
@@ -26,8 +30,7 @@
 }
 
 .blank {
-  background: $background-color;
-  width: 1000px;
+  background-color: $lightBlue;
   height: 100%;
   position: relative;
   border: 1px solid black; 
