@@ -5,15 +5,58 @@ These are things that don't output CSS
 /*
 Partials - these generate the bulk of the CSS, separated by categories
 */
-@import url("https://fonts.googleapis.com/css?family=Fascinate|Fira+Sans|PT+Sans+Narrow");
-@import url("https://fonts.googleapis.com/css?family=Fascinate|Fira+Sans|PT+Sans+Narrow");
+@import url("https://fonts.googleapis.com/css?family=Quicksand|Fira+Sans|PT+Sans+Narrow");
+@import url("https://fonts.googleapis.com/css?family=Quicksand|Fira+Sans|PT+Sans+Narrow");
+.boatContainer {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  position: absolute;
+  bottom: 0; }
+
+.sailContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  justify-content: center; }
+
+.baseBoatContainer {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  z-index: 100;
+  justify-content: center; }
+
 .boat {
   background-color: brown;
-  height: 100px;
-  width: 400px;
-  position: fixed;
-  bottom: 0;
-  z-index: 100; }
+  height: 100px; }
+
+.boatSide {
+  width: 100px;
+  width: 100px;
+  height: 100px; }
+
+.boatMiddle {
+  width: 300px; }
+
+.boatLeft {
+  border-radius: 0 0 0 150px; }
+
+.boatRight {
+  border-radius: 0 0 150px 0; }
+
+.mast {
+  background-color: brown;
+  height: 300px;
+  width: 10px; }
+
+.sail {
+  width: 0;
+  height: 0;
+  border-left: 200px solid white;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent; }
 
 .pageWrapper {
   display: flex;
@@ -29,7 +72,7 @@ Partials - these generate the bulk of the CSS, separated by categories
 
 .title {
   position: absolute;
-  font-family: "Fascinate", cursive; }
+  font-family: "Quicksand", cursive; }
 
 .background {
   background-color: lightblue;
@@ -66,5 +109,3 @@ Partials - these generate the bulk of the CSS, separated by categories
 /*
 Vendors - third part stylesheets
 */
-
-/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,25 @@
+{
+  "name": "wedding",
+  "version": "1.0.0",
+  "description": "Aileen &amp; Roger's wedding website",
+  "main": "index.js",
+  "dependencies": {
+    "node": "^11.12.0",
+    "node-sass": "^4.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch styles/scss -o styles/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aileenmwong/wedding.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aileenmwong/wedding/issues"
+  },
+  "homepage": "https://github.com/aileenmwong/wedding#readme"
+}

@@ -1,8 +1,60 @@
+.boatContainer {
+	display: flex;
+	flex-direction: column;
+	width: 600px;
+	position: absolute;
+	bottom: 0;
+}
+
+.sailContainer {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	height: auto;
+	justify-content: center;
+}
+
+.baseBoatContainer {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	z-index: 100;
+	justify-content: center;
+}
+
 .boat {
-  background-color: brown;
-  height: 100px;
-  width: 400px;
-  position: fixed;
-  bottom: 0; 
-  z-index: 100;
+ 	background-color: brown;
+	height: 100px;
+}
+
+.boatSide {
+	width: 100px;
+	width: 100px;
+	height: 100px;
+}
+
+.boatMiddle {
+	width: 300px;
+}
+
+.boatLeft {
+	border-radius: 0 0 0 150px;
+}
+
+.boatRight {
+	border-radius: 0 0 150px 0;
+}
+
+.mast {
+	background-color: brown;
+	height: 300px;
+	width: 10px;
+}
+
+.sail {
+	width: 0;
+	height: 0;
+	border-left: 200px solid white;
+	border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
 }
