@@ -8,11 +8,13 @@
 	height: 2000px;
 	flex-wrap: nowrap;
 	justify-content: flex-start;
+  background: rgba(238,247,250,1);
 }
 
 .page {
 	display: flex;
 	flex-direction: column; 
+
 }
 
 .title  {
@@ -21,16 +23,14 @@
 }
 
 .background {
-  background-color: $lightBlue;
   width: 1000px;
+  opacity: 0;
   height: 100%;
   position: relative;
   border: 1px solid black;
-  z-index: -100;
 }
 
 .blank {
-  background-color: $lightBlue;
   height: 100%;
   position: relative;
   border: 1px solid black; 
