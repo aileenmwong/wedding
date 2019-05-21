@@ -17,8 +17,8 @@
 }
 
 .wave {
-	width: 60%;
-	height: 200%;
+	width: 650px;
+	height: 700px;
 	position: absolute;
 	margin-left: -500px;
 	margin-top: -500px;
@@ -28,15 +28,23 @@
 }
 
 .wave1 {
-	left: 30%;
+	left: 15%;
 }
 
 .wave2 {
-	left: 60%;
+	left: 40%;
 }
 
 .wave3 {
+	left: 65%;
+}
+
+.wave4 {
 	left: 90%;
+}
+
+.wave5 {
+	left: 105%;
 }
 
 @keyframes wave {
