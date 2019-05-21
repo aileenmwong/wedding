@@ -9,6 +9,7 @@
 	flex-wrap: nowrap;
 	justify-content: flex-start;
   background: rgba(238,247,250,1);
+  position: absolute;
 }
 
 .page {
@@ -28,6 +29,7 @@
   height: 100%;
   position: relative;
   border: 1px solid black;
+  z-index: 1;
 }
 
 .blank {

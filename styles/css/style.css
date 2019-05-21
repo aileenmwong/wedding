@@ -7,12 +7,23 @@ Partials - these generate the bulk of the CSS, separated by categories
 */
 @import url("https://fonts.googleapis.com/css?family=Quicksand|Fira+Sans|PT+Sans+Narrow");
 @import url("https://fonts.googleapis.com/css?family=Quicksand|Fira+Sans|PT+Sans+Narrow");
+body {
+  width: 100%;
+  position: absolute; }
+
+.static {
+  position: relative;
+  width: 5000px;
+  bottom: 0;
+  margin-top: 300px; }
+
 .boatContainer {
   display: flex;
   flex-direction: column;
   width: 600px;
-  position: absolute;
+  position: sticky;
   bottom: 0;
+  left: 0;
   margin-bottom: 30px;
   z-index: 100; }
 
@@ -66,7 +77,8 @@ Partials - these generate the bulk of the CSS, separated by categories
   height: 2000px;
   flex-wrap: nowrap;
   justify-content: flex-start;
-  background: #eef7fa; }
+  background: #eef7fa;
+  position: absolute; }
 
 .page {
   display: flex;
@@ -81,7 +93,8 @@ Partials - these generate the bulk of the CSS, separated by categories
   opacity: 0;
   height: 100%;
   position: relative;
-  border: 1px solid black; }
+  border: 1px solid black;
+  z-index: 1; }
 
 .blank {
   height: 100%;
@@ -112,19 +125,19 @@ Partials - these generate the bulk of the CSS, separated by categories
 .waveContainer {
   bottom: 0;
   z-index: 1;
-  background: #eef7fa;
-  height: 100%; }
+  background: #eef7fa; }
 
 .water {
   width: 100%;
-  height: 50%;
+  height: 100%;
   position: absolute;
   transform: translate(-50%, -50%);
   border-radius: 5px;
   overflow: hidden;
   left: 50%;
   top: 80%;
-  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); }
+  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+  z-index: 90; }
 
 .wave {
   width: 650px;
@@ -137,19 +150,19 @@ Partials - these generate the bulk of the CSS, separated by categories
   animation: wave 15s infinite linear; }
 
 .wave1 {
-  left: 15%; }
+  left: 5%; }
 
 .wave2 {
-  left: 40%; }
+  left: 10%; }
 
 .wave3 {
-  left: 65%; }
+  left: 15%; }
 
 .wave4 {
-  left: 90%; }
+  left: 20%; }
 
 .wave5 {
-  left: 105%; }
+  left: 25%; }
 
 @keyframes wave {
   from {

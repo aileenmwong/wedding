@@ -2,3 +2,15 @@
 $light: 100;
 $regular: 400;
 $bold: 600;
+
+body {
+	width: 100%;
+	position: absolute;
+}
+
+.static {
+	position: relative;
+	width: 5000px;
+	bottom: 0;
+	margin-top: 300px;
+}
