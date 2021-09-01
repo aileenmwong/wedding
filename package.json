@@ -7,7 +7,7 @@
     "compass": "^0.1.1",
     "node": "^11.12.0",
     "node-sass": "^4.11.0",
-    "tar": "^4.4.8"
+    "tar": "^4.4.18"
   },
   "devDependencies": {},
   "scripts": {
